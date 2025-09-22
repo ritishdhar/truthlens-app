@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
+import { MagnifyingGlass } from './magnifying-glass';
 
 export function Hero() {
   const [isMounted, setIsMounted] = useState(false);
@@ -39,6 +40,9 @@ export function Hero() {
           <div className="absolute bottom-[15%] right-[15%] w-48 h-48 rounded-full bg-primary/5 shadow-[inset_0_0_30px_theme(colors.primary/0.3)] opacity-50" />
         </div>
       </div>
+      
+      {/* Layer 10: Animated Magnifying Glass */}
+      <MagnifyingGlass className="absolute z-10 w-[30rem] h-[30rem] animate-[scan-focus_20s_ease-in-out_infinite]" />
 
       {/* Layer 30: Lens Flare */}
       <div
@@ -51,7 +55,7 @@ export function Hero() {
       />
 
       {/* Text & CTA Container */}
-      <div className="relative z-10 flex flex-col items-center justify-center">
+      <div className="relative z-20 flex flex-col items-center justify-center">
         {/* Layer 40: Main Heading and CTA */}
         <div
             style={parallax(0.06)}
