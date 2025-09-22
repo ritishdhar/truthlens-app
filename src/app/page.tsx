@@ -1,5 +1,6 @@
 import { Header } from "@/components/layout/header";
 import { Hero } from "@/components/landing/hero";
+import { CrisisSection } from "@/components/landing/crisis-section";
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <Hero />
+        <CrisisSection />
       </main>
     </div>
   );
