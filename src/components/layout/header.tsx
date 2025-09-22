@@ -33,7 +33,7 @@ export function Header() {
       <div className="glassmorphic rounded-full px-4 py-2">
         <nav className="flex items-center justify-between gap-4">
           <Link href="/" className="text-xl font-bold text-glow tracking-wider">
-            TRUTHLENS
+            TRUTHLENS.AI
           </Link>
           
           <ul className="hidden lg:flex items-center gap-x-6">
