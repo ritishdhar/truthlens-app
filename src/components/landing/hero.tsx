@@ -65,7 +65,7 @@ export function Hero() {
             '[animation-delay:700ms]'
             )}
         >
-            <h1 className="text-5xl md:text-7xl font-bold tracking-widest uppercase text-glow">
+            <h1 className="font-headline text-6xl md:text-8xl font-black tracking-wider uppercase text-glow">
                 TRUTHLENS
             </h1>
             <p className="mt-8 text-sm text-foreground/60">
