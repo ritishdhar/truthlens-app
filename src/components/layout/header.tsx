@@ -50,9 +50,11 @@ export function Header() {
             <Link href="#" className="hidden sm:block text-sm text-foreground/80 hover:text-foreground transition-colors">
               Log In
             </Link>
-            <Button variant="outline" className="rounded-full bg-transparent hover:bg-white/10 border-white/50 h-9 px-4 sm:px-6 text-sm">
-              Analyze Media
-            </Button>
+            <Link href="/analyze">
+                <Button variant="outline" className="rounded-full bg-transparent hover:bg-white/10 border-white/50 h-9 px-4 sm:px-6 text-sm">
+                Analyze Media
+                </Button>
+            </Link>
             <Button variant="ghost" size="icon" className="hidden sm:flex items-center rounded-full hover:bg-white/10 text-sm">
               <Globe className="h-4 w-4" />
               <span className="ml-2">EN</span>

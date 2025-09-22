@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { MagnifyingGlass } from './magnifying-glass';
@@ -80,9 +81,11 @@ export function Hero() {
             <p className={cn("mt-8 text-sm text-foreground/60 transition-opacity duration-1000", isMounted ? 'opacity-100' : 'opacity-0', '[transition-delay:1200ms]')}>
                 AI-Powered Deepfake Detection
             </p>
-            <Button size="lg" className={cn("mt-6 rounded-full px-10 py-6 text-lg font-semibold bg-white text-background hover:bg-gray-200 transition-all duration-1000 transform hover:scale-105 aurora-border", isMounted ? 'opacity-100' : 'opacity-0', '[transition-delay:1400ms]')}>
-                Analyze Media
-            </Button>
+            <Link href="/analyze">
+              <Button size="lg" className={cn("mt-6 rounded-full px-10 py-6 text-lg font-semibold bg-white text-background hover:bg-gray-200 transition-all duration-1000 transform hover:scale-105 aurora-border", isMounted ? 'opacity-100' : 'opacity-0', '[transition-delay:1400ms]')}>
+                  Analyze Media
+              </Button>
+            </Link>
         </div>
       </div>
       
