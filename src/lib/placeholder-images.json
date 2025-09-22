@@ -1,3 +1,28 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "feature-realtime",
+      "description": "Abstract visualization of speed and data processing.",
+      "imageUrl": "https://picsum.photos/seed/101/600/400",
+      "imageHint": "data speed"
+    },
+    {
+      "id": "feature-explainability",
+      "description": "Conceptual image of layers and analysis.",
+      "imageUrl": "https://picsum.photos/seed/102/600/400",
+      "imageHint": "data layers"
+    },
+    {
+      "id": "feature-ensemble",
+      "description": "Network of interconnected nodes representing machine learning models.",
+      "imageUrl": "https://picsum.photos/seed/103/600/400",
+      "imageHint": "neural network"
+    },
+    {
+      "id": "feature-mobile",
+      "description": "Sleek user interface on a smartphone screen.",
+      "imageUrl": "https://picsum.photos/seed/104/600/400",
+      "imageHint": "mobile ui"
+    }
+  ]
 }
