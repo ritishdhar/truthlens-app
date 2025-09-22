@@ -32,9 +32,8 @@ export function Header() {
     >
       <div className="glassmorphic rounded-full px-4 py-2">
         <nav className="flex items-center justify-between gap-4">
-          <Link href="/" className="text-xl font-bold text-glow">
-            <span className="font-extrabold">TRUTH</span>
-            <span className="font-medium">LENS</span>
+          <Link href="/" className="text-xl font-bold text-glow tracking-wider">
+            TRUTHLENS
           </Link>
           
           <ul className="hidden lg:flex items-center gap-x-6">

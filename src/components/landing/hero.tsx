@@ -52,18 +52,6 @@ export function Hero() {
 
       {/* Text & CTA Container */}
       <div className="relative z-10 flex flex-col items-center justify-center">
-        {/* Layer 10: "TRUTH" Text */}
-        <h1
-          style={parallax(0.05)}
-          className={cn(
-            'font-black text-7xl md:text-9xl lg:text-[180px] tracking-[1.5rem] md:tracking-[3rem] text-white/50 transition-all duration-1000 ease-out z-10 -mb-12 md:-mb-20 lg:-mb-28',
-            isMounted ? 'opacity-100 scale-100' : 'opacity-0 scale-90',
-            '[animation-delay:500ms]'
-          )}
-        >
-          TRUTH
-        </h1>
-        
         {/* Layer 40: Main Heading and CTA */}
         <div
             style={parallax(0.06)}
@@ -73,9 +61,9 @@ export function Hero() {
             '[animation-delay:700ms]'
             )}
         >
-            <h2 className="text-3xl md:text-5xl font-bold tracking-wider uppercase">
-                LENS
-            </h2>
+            <h1 className="text-5xl md:text-7xl font-bold tracking-widest uppercase text-glow">
+                TRUTHLENS
+            </h1>
             <p className="mt-8 text-sm text-foreground/60">
                 AI-Powered Deepfake Detection
             </p>
