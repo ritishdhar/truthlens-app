@@ -30,6 +30,8 @@ export function Hero() {
     return { transform: `translate3d(${x}px, ${y}px, 0)` };
   };
 
+  const title = "TRUTHLENS";
+
   return (
     <section className="relative w-full h-screen overflow-hidden flex justify-center items-center text-center">
       {/* Layer 0: Background & Planets */}
@@ -62,16 +64,23 @@ export function Hero() {
             className={cn(
             'relative z-40 transition-all duration-1000 ease-out',
             isMounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8',
-            '[animation-delay:700ms]'
             )}
         >
-            <h1 className="font-headline text-6xl md:text-8xl font-black tracking-wider uppercase text-glow">
-                TRUTHLENS
+            <h1 className="font-headline text-6xl md:text-8xl font-black tracking-wider uppercase text-glow flex">
+              {title.split('').map((char, index) => (
+                <span
+                  key={index}
+                  className="animate-[converge_0.8s_ease-out_forwards]"
+                  style={{ animationDelay: `${200 + index * 80}ms`, opacity: 0 }}
+                >
+                  {char}
+                </span>
+              ))}
             </h1>
-            <p className="mt-8 text-sm text-foreground/60">
+            <p className={cn("mt-8 text-sm text-foreground/60 transition-opacity duration-1000", isMounted ? 'opacity-100' : 'opacity-0', '[transition-delay:1200ms]')}>
                 AI-Powered Deepfake Detection
             </p>
-            <Button size="lg" className="mt-6 rounded-full px-10 py-6 text-lg font-semibold bg-white text-background hover:bg-gray-200 transition-all duration-300 transform hover:scale-105 aurora-border">
+            <Button size="lg" className={cn("mt-6 rounded-full px-10 py-6 text-lg font-semibold bg-white text-background hover:bg-gray-200 transition-all duration-1000 transform hover:scale-105 aurora-border", isMounted ? 'opacity-100' : 'opacity-0', '[transition-delay:1400ms]')}>
                 Analyze Media
             </Button>
         </div>
