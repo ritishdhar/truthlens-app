@@ -87,7 +87,6 @@ export function Hero() {
       
       {/* Layer 20: The Arc */}
       <div
-        style={parallax(0.03)}
         className={cn(
           "absolute left-1/2 -translate-x-1/2 w-[180vw] h-[180vw] md:w-[120vw] md:h-[120vw] z-20",
           "bottom-[-170vw] md:bottom-[-110vw]"
