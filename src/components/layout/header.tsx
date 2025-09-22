@@ -7,11 +7,11 @@ import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
 const navLinks = [
-  { name: 'Why Argus VPN', href: '#' },
-  { name: 'Cost', href: '#' },
-  { name: 'Devices', href: '#' },
+  { name: 'How It Works', href: '#' },
+  { name: 'Pricing', href: '#' },
+  { name: 'API', href: '#' },
   { name: 'Support', href: '#' },
-  { name: 'Get points', href: '#' },
+  { name: 'About', href: '#' },
   { name: 'Blog', href: '#' },
 ];
 
@@ -33,8 +33,8 @@ export function Header() {
       <div className="glassmorphic rounded-full px-4 py-2">
         <nav className="flex items-center justify-between gap-4">
           <Link href="/" className="text-xl font-bold text-glow">
-            <span className="font-extrabold">ARGUS</span>
-            <span className="font-medium">VPN</span>
+            <span className="font-extrabold">TRUTH</span>
+            <span className="font-medium">LENS</span>
           </Link>
           
           <ul className="hidden lg:flex items-center gap-x-6">
@@ -52,7 +52,7 @@ export function Header() {
               Log In
             </Link>
             <Button variant="outline" className="rounded-full bg-transparent hover:bg-white/10 border-white/50 h-9 px-4 sm:px-6 text-sm">
-              Install ArgusVPN
+              Analyze Media
             </Button>
             <Button variant="ghost" size="icon" className="hidden sm:flex items-center rounded-full hover:bg-white/10 text-sm">
               <Globe className="h-4 w-4" />

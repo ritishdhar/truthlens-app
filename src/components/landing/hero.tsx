@@ -52,7 +52,7 @@ export function Hero() {
 
       {/* Text & CTA Container */}
       <div className="relative z-10 flex flex-col items-center justify-center">
-        {/* Layer 10: "ARGUS" Text */}
+        {/* Layer 10: "TRUTH" Text */}
         <h1
           style={parallax(0.05)}
           className={cn(
@@ -61,7 +61,7 @@ export function Hero() {
             '[animation-delay:500ms]'
           )}
         >
-          ARGUS
+          TRUTH
         </h1>
         
         {/* Layer 40: Main Heading and CTA */}
@@ -74,13 +74,13 @@ export function Hero() {
             )}
         >
             <h2 className="text-3xl md:text-5xl font-bold tracking-wider uppercase">
-                VPN THAT SIMPLY WORKS
+                LENS
             </h2>
             <p className="mt-8 text-sm text-foreground/60">
-                30-days money back guarantee
+                AI-Powered Deepfake Detection
             </p>
             <Button size="lg" className="mt-6 rounded-full px-10 py-6 text-lg font-semibold bg-white text-background hover:bg-gray-200 transition-all duration-300 transform hover:scale-105 aurora-border">
-                Install ArgusVPN
+                Analyze Media
             </Button>
         </div>
       </div>

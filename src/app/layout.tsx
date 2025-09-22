@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'ArgusVPN - The VPN That Simply Works',
-  description: 'Experience unparalleled security and privacy with ArgusVPN. Fast, reliable, and easy to use on all your devices.',
+  title: 'Truthlens - AI-Powered Deepfake Detection',
+  description: 'Detect and analyze deepfakes in media with advanced AI. Truthlens helps you uncover manipulated content with cutting-edge analysis.',
 };
 
 export default function RootLayout({
