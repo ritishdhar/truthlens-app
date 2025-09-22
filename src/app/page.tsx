@@ -4,6 +4,7 @@ import { CrisisSection } from "@/components/landing/crisis-section";
 import { HowItWorksSection } from "@/components/landing/how-it-works-section";
 import { FeatureShowcaseSection } from "@/components/landing/feature-showcase-section";
 import { CtaSection } from "@/components/landing/cta-section";
+import { Footer } from "@/components/layout/footer";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <FeatureShowcaseSection />
         <CtaSection />
       </main>
+      <Footer />
     </div>
   );
 }
