@@ -47,7 +47,7 @@ export function Header() {
           </ul>
 
           <div className="flex items-center gap-x-2 sm:gap-x-4">
-            <Link href="#" className="hidden sm:block text-sm text-foreground/80 hover:text-foreground transition-colors">
+            <Link href="/login" className="hidden sm:block text-sm text-foreground/80 hover:text-foreground transition-colors">
               Log In
             </Link>
             <Link href="/analyze">
