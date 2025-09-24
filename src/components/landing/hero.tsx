@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { MagnifyingGlass } from './magnifying-glass';
+import { Search } from 'lucide-react';
 
 export function Hero() {
   const [isMounted, setIsMounted] = useState(false);
@@ -81,11 +82,30 @@ export function Hero() {
             <p className={cn("mt-8 text-sm text-foreground/60 transition-opacity duration-1000", isMounted ? 'opacity-100' : 'opacity-0', '[transition-delay:1200ms]')}>
                 AI-Powered Deepfake Detection
             </p>
-            <Link href="/analyze">
-              <Button size="lg" className={cn("mt-6 rounded-full px-10 py-6 text-lg font-semibold bg-white text-background hover:bg-gray-200 transition-all duration-1000 transform hover:scale-105 aurora-border", isMounted ? 'opacity-100' : 'opacity-0', '[transition-delay:1400ms]')}>
-                  Analyze Media
-              </Button>
-            </Link>
+            <Button 
+              asChild
+              size="default" 
+              className={cn(
+                "mt-6 rounded-full px-6 py-4 text-base font-semibold relative overflow-hidden group !w-auto !min-w-0 max-w-fit",
+                "bg-gradient-to-r from-white to-gray-50 text-background",
+                "hover:from-gray-50 hover:to-white",
+                "transition-all duration-300 ease-out",
+                "transform hover:scale-[1.02] active:scale-[0.98]",
+                "shadow-lg hover:shadow-xl hover:shadow-black/10",
+                "border border-gray-200 hover:border-gray-300",
+                "before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/30 before:to-transparent",
+                "before:translate-x-[-100%] hover:before:translate-x-[100%] before:transition-transform before:duration-500",
+                isMounted ? 'opacity-100' : 'opacity-0', 
+                '[transition-delay:1400ms]'
+              )}
+            >
+              <Link href="/analyze" className="relative z-10 block w-full h-full">
+                <div className="flex items-center gap-1">
+                  <Search className="h-4 w-4 transition-transform duration-300 group-hover:rotate-12" />
+                  <span>Analyze Media</span>
+                </div>
+              </Link>
+            </Button>
         </div>
       </div>
       

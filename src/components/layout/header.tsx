@@ -2,14 +2,11 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
 const navLinks = [
   { name: 'How It Works', href: '#' },
-  { name: 'Pricing', href: '#' },
-  { name: 'API', href: '#' },
   { name: 'Support', href: '#' },
   { name: 'About', href: '#' },
   { name: 'Blog', href: '#' },
@@ -30,10 +27,10 @@ export function Header() {
         isMounted ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-8'
       )}
     >
-      <div className="glassmorphic rounded-full px-4 py-2">
+      <div className="rounded-full px-4 py-2 backdrop-blur-lg bg-[linear-gradient(180deg,rgba(255,255,255,0.10)_0%,rgba(255,255,255,0.04)_100%)] border border-white/15 shadow-[0_8px_40px_rgba(0,0,0,0.35)]">
         <nav className="flex items-center justify-between gap-4">
-          <Link href="/" className="text-xl font-bold text-glow tracking-wider">
-            TRUTHLENS.AI
+          <Link href="/" className="text-xl font-bold tracking-wider font-sans">
+            TRUTHLENS AI
           </Link>
           
           <ul className="hidden lg:flex items-center gap-x-6">
@@ -55,10 +52,6 @@ export function Header() {
                 Analyze Media
                 </Button>
             </Link>
-            <Button variant="ghost" size="icon" className="hidden sm:flex items-center rounded-full hover:bg-white/10 text-sm">
-              <Globe className="h-4 w-4" />
-              <span className="ml-2">EN</span>
-            </Button>
           </div>
         </nav>
       </div>

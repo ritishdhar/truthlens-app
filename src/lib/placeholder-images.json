@@ -2,27 +2,27 @@
   "placeholderImages": [
     {
       "id": "feature-realtime",
-      "description": "Abstract visualization of speed and data processing.",
-      "imageUrl": "https://picsum.photos/seed/101/600/400",
-      "imageHint": "data speed"
+      "description": "Real‑time analytics dashboard with live updating charts and metrics.",
+      "imageUrl": "https://images.unsplash.com/photo-1517148815978-75f6acaaf32c?auto=format&fit=crop&w=1600&q=60",
+      "imageHint": "real time charts dashboard"
     },
     {
       "id": "feature-explainability",
-      "description": "Conceptual image of layers and analysis.",
-      "imageUrl": "https://picsum.photos/seed/102/600/400",
-      "imageHint": "data layers"
+      "description": "Model explainability visual with layered charts and highlighted insights.",
+      "imageUrl": "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1600&q=60",
+      "imageHint": "explainability layers charts"
     },
     {
       "id": "feature-ensemble",
-      "description": "Network of interconnected nodes representing machine learning models.",
-      "imageUrl": "https://picsum.photos/seed/103/600/400",
-      "imageHint": "neural network"
+      "description": "Network graph of interconnected nodes representing an ensemble of models.",
+      "imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=60",
+      "imageHint": "network nodes ensemble"
     },
     {
       "id": "feature-mobile",
-      "description": "Sleek user interface on a smartphone screen.",
-      "imageUrl": "https://picsum.photos/seed/104/600/400",
-      "imageHint": "mobile ui"
+      "description": "Clean mobile UI screen demonstrating on‑device analysis.",
+      "imageUrl": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1600&q=60",
+      "imageHint": "mobile ui smartphone"
     }
   ]
 }

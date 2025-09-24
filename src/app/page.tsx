@@ -13,8 +13,11 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <CrisisSection />
+        <div className="h-px w-full bg-gradient-to-r from-transparent via-foreground/10 to-transparent" />
         <HowItWorksSection />
+        <div className="h-px w-full bg-gradient-to-r from-transparent via-foreground/10 to-transparent" />
         <FeatureShowcaseSection />
+        <div className="h-px w-full bg-gradient-to-r from-transparent via-foreground/10 to-transparent" />
         <CtaSection />
       </main>
       <Footer />
